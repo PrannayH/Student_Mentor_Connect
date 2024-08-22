@@ -27,11 +27,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(students_router, tags=["students"])
-app.include_router(mentors_router, tags=["mentors"])
 app.include_router(projects_router, tags=["projects"])
 app.include_router(organizations_router, tags=["organizations"])
 app.include_router(common_router, tags=["common"])
+app.include_router(students_router, tags=["students"])
+app.include_router(mentors_router, tags=["mentors"])
 
 
 if __name__ == "__main__":
