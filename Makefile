@@ -1,5 +1,4 @@
 .PHONY: server
-
 ## Run server and db
 server:
 	cd server;
@@ -10,7 +9,6 @@ server:
 	sleep 20;
 	docker run -d --name full-stack-backend -p 8000:8000 full-stack-backend;
 
-## Build the server image
 build-server:
 	cd server && docker build -t full-stack-backend .;
 
